@@ -3,4 +3,10 @@
     <string name="splash_app">Alvin App</string>
     <string name="welcome_1">Welcome To My App</string>
     <string name="welcome_2">Have A Nice Day!</string>
+    <string name="coming_soon_list">Coming Soon List</string>
+    <string name="tugas_list">Tugas List</string>
+    <string name="role_main">Master</string>
+    <string name="name_main">Emiya MD</string>
+    <string name="todo">TODO</string>
+    <string name="anime_list">Anime List</string>
 </resources>
