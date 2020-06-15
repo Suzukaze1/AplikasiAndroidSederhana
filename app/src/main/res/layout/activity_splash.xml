@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    tools:context=".SplashActivity">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/emiya_md"
+        android:layout_above="@+id/tvGarisTengah"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="2dp"
+        android:src="@drawable/emiya_md"
+        android:layout_width="170dp"
+        android:layout_height="170dp"/>
+
+    <TextView
+        android:id="@+id/tvGarisTengah"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rrWelcomeSplash"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvGarisTengah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvAlvinAPP"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:fontFamily="@font/nexalight"
+            android:text="@string/splash_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:id="@+id/tvWelcome1"
+            android:layout_below="@+id/tvAlvinAPP"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:fontFamily="@font/nexalight"
+            android:text="@string/welcome_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvWelcome2"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tvWelcome1"
+            android:layout_centerHorizontal="true"
+            android:textColor="#F8F8F8"
+            android:textSize="28sp"
+            android:fontFamily="@font/nexalight"
+            android:text="@string/welcome_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvWelcome2"
+            android:layout_width="210dp"
+            android:layout_height="1dp"
+            android:background="#000000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
