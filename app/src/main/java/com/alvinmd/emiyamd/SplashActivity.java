@@ -1,5 +1,6 @@
 package com.alvinmd.emiyamd;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,7 +11,7 @@ import android.widget.RelativeLayout;
 
 public class SplashActivity extends AppCompatActivity {
 
-    RelativeLayout relativeLayoutWelcome;
+    RelativeLayout relativeLayoutWelcome,relativeLayoutWelcome2;
     Handler handler = new Handler();
 
     @Override
@@ -18,10 +19,15 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
         relativeLayoutWelcome = findViewById(R.id.rrWelcomeSplash);
+        relativeLayoutWelcome2 = findViewById(R.id.rrWelcomeSplash2);
 
         thread.start();
         handler.postDelayed(runnable, 2000);
+        handler.postDelayed(runnable1, 3000);
     }
 
     Runnable runnable = new Runnable() {
@@ -31,10 +37,17 @@ public class SplashActivity extends AppCompatActivity {
         }
     };
 
+    Runnable runnable1 = new Runnable() {
+        @Override
+        public void run() {
+            relativeLayoutWelcome2.setVisibility(View.VISIBLE);
+        }
+    };
+
     Thread thread = new Thread(){
         public void run(){
             try {
-                sleep(5000);
+                sleep(6000);
             }catch (InterruptedException e){
                 e.printStackTrace();
             }finally {
