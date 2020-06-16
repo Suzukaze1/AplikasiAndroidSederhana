@@ -1,4 +1,4 @@
-package com.alvinmd.emiyamd;
+package com.alvinmd.emiyamd.activity;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.RelativeLayout;
+
+import com.alvinmd.emiyamd.R;
 
 public class SplashActivity extends AppCompatActivity {
 
